@@ -286,12 +286,12 @@ Expected output:
 ```bash
 python backend/app.py
 ```
-The Flask API starts on `http://localhost:5000`:
+The Flask API starts on `http://localhost:5001`:
 ```
 ============================================================
 🚀 CREDIT RISK ASSESSMENT API STARTING
 ============================================================
-📍 API running at: http://127.0.0.1:5000
+📍 API running at: http://127.0.0.1:5001
 📊 Database: credit_risk_db
 🔍 Debug mode: True
 ============================================================
@@ -299,7 +299,7 @@ The Flask API starts on `http://localhost:5000`:
 
 Health Check:
 ```bash
-curl http://localhost:5000/health
+curl http://localhost:5001/health
 # Response: {"status":"healthy","database":"connected"}
 ```
 
@@ -313,7 +313,7 @@ Streamlit opens automatically at `http://localhost:8501`
 ### Testing the System
 ```bash
 # Submit a test loan application
-curl -X POST http://localhost:5000/api/loans/apply \
+curl -X POST http://localhost:5001/api/loans/apply \
   -H "Content-Type: application/json" \
   -d '{
     "customer_id": 1,
@@ -330,7 +330,7 @@ curl -X POST http://localhost:5000/api/loans/apply \
 
 ### Base URL
 ```
-http://localhost:5000/api
+http://localhost:5001/api
 ```
 
 ### Endpoints

@@ -7,7 +7,7 @@ DB_HOST = 'localhost'
 DB_PORT = 5432
 DB_NAME = 'credit_risk_db'
 DB_USER = 'postgres'
-DB_PASSWORD = 'gow@vani'  # Change this!
+DB_PASSWORD = 'your_password_here'  # Change this!
 
 # SQLAlchemy connection string
 from urllib.parse import quote_plus as _qp
