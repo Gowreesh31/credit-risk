@@ -7,10 +7,11 @@ DB_HOST = 'localhost'
 DB_PORT = 5432
 DB_NAME = 'credit_risk_db'
 DB_USER = 'postgres'
-DB_PASSWORD = 'your_password_here'  # Change this!
+DB_PASSWORD = 'gow@vani'  # Change this!
 
 # SQLAlchemy connection string
-DATABASE_URI = f'postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
+from urllib.parse import quote_plus as _qp
+DATABASE_URI = f'postgresql://{DB_USER}:{_qp(DB_PASSWORD)}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
 
 # Connection pool settings
 POOL_SIZE = 5
@@ -19,7 +20,7 @@ POOL_TIMEOUT = 30
 
 # ─── API Configuration ──────────────────────────────────────────────
 API_HOST = '0.0.0.0'
-API_PORT = 5000
+API_PORT = 5001
 DEBUG = True
 
 # ─── ML Model Configuration ─────────────────────────────────────────

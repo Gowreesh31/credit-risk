@@ -12,7 +12,7 @@ import plotly.graph_objects as go
 # ─── Page Configuration ──────────────────────────────────────────
 st.set_page_config(page_title="Loan Application", page_icon="📝", layout="wide")
 
-API_BASE_URL = "http://localhost:5000/api"
+API_BASE_URL = "http://localhost:5001/api"
 
 st.title("📝 Loan Application")
 st.markdown("Submit a new loan application and receive instant ML-powered risk assessment.")

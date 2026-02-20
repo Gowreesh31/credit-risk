@@ -16,7 +16,7 @@ import plotly.express as px
 # ─── Page Configuration ──────────────────────────────────────────
 st.set_page_config(page_title="Admin Dashboard", page_icon="📊", layout="wide")
 
-API_BASE_URL = "http://localhost:5000/api"
+API_BASE_URL = "http://localhost:5001/api"
 
 st.title("📊 Admin Dashboard")
 st.markdown("Real-time portfolio health monitoring and risk analytics.")
@@ -36,7 +36,7 @@ def fetch_data(endpoint):
 
 # ─── Check API connectivity ──────────────────────────────────────
 try:
-    health = requests.get("http://localhost:5000/health", timeout=5)
+    health = requests.get("http://localhost:5001/health", timeout=5)
     api_connected = health.status_code == 200
 except Exception:
     api_connected = False

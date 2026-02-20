@@ -6,6 +6,7 @@ End-to-end enterprise credit risk system using **Random Forest** (~94% Accuracy)
 
 ## 📋 Table of Contents
 - [Project Overview](#-project-overview)
+- [Working Screenshots](#-working-screenshots)
 - [Key Features](#-key-features)
 - [System Architecture](#-system-architecture)
 - [Technology Stack](#-technology-stack)
@@ -32,6 +33,29 @@ This system addresses the critical challenge of **manual loan underwriting** in 
 
 ### The Dataset Strategy
 Rather than using randomly generated data, this system employs **causal synthetic data** where financial risk factors (Debt-to-Income ratio, Loan-to-Income ratio) directly determine default outcomes. This ensures the ML model learns genuine financial patterns rather than spurious correlations — validating that the #1 feature importance is `debt_to_income_ratio`, matching real-world banking theory.
+
+---
+
+## 📸 Working Screenshots
+
+### Home Page — System Overview & Key Metrics
+![Home Page - Part 1](screenshots/app1.png)
+![Home Page - Part 2](screenshots/app2.png)
+
+### Loan Application — ML-Powered Risk Assessment
+![Loan Application Form](screenshots/loan_application.png)
+
+### Admin Dashboard — Portfolio Health KPIs
+![Admin Dashboard](screenshots/Admin_dashboard.png)
+
+### Portfolio Analytics — Loan Distribution & Financial Breakdown
+![Portfolio Analytics](screenshots/portfolio_analytics.png)
+
+### NPA Analysis — Asset Classification
+![NPA Analysis](screenshots/NPA_analysis.png)
+
+### Repayment Performance — Collection Metrics
+![Repayment Performance](screenshots/Repayment_performance.png)
 
 ---
 

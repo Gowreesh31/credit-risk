@@ -253,7 +253,7 @@ class Guarantor(Base):
     guarantor_id = Column(Integer, primary_key=True, autoincrement=True)
     loan_id = Column(Integer, ForeignKey('loans.loan_id', ondelete='CASCADE'), nullable=False)
     full_name = Column(String(200), nullable=False)
-    relationship = Column(String(100))
+    guarantor_relationship = Column('relationship', String(100))
     phone = Column(String(20))
     email = Column(String(200))
     monthly_income = Column(Numeric(15, 2))
@@ -267,7 +267,7 @@ class Guarantor(Base):
             'guarantor_id': self.guarantor_id,
             'loan_id': self.loan_id,
             'full_name': self.full_name,
-            'relationship': self.relationship,
+            'relationship': self.guarantor_relationship,
             'phone': self.phone,
             'email': self.email,
             'monthly_income': float(self.monthly_income) if self.monthly_income else None
