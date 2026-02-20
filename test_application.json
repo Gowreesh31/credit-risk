@@ -1,0 +1,7 @@
+{
+    "customer_id": 1,
+    "loan_amount": 3500000,
+    "loan_tenure_months": 36,
+    "interest_rate": 9.5,
+    "loan_purpose": "Home Renovation"
+}

@@ -1,0 +1,21 @@
+# Backend Framework
+Flask==3.1.0
+Flask-Cors==5.0.1
+SQLAlchemy==2.0.36
+psycopg2-binary==2.9.10
+
+# Machine Learning & Data Science
+scikit-learn==1.6.0
+pandas==2.2.3
+numpy==2.2.1
+shap==0.44.0
+joblib==1.4.2
+
+# Frontend & Visualization
+streamlit==1.41.1
+plotly==5.24.1
+matplotlib==3.10.0
+
+# Utilities
+requests==2.32.3
+python-dateutil==2.9.0
